@@ -1,0 +1,6 @@
+---
+- name: refresh yum
+  command: yum clean all
+  become: yes
+  become_user: root
+  become_method: dzdo

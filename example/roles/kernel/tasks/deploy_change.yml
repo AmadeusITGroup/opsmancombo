@@ -1,0 +1,14 @@
+---
+- name: Deploying MongoDB changes
+  mdb_deploy: 
+    cluster: "{{ group }}"
+    user:    "{{ user }}"
+    key:     "{{ key }}" 
+    mms:     "{{ mms }}" 
+    verify:  "{{ no_verify | default(verify) }}"
+  delegate_to: localhost
+  register: result
+  retries: 30
+  until: result.meta != 0 
+
+- debug: msg={{ result.meta }}

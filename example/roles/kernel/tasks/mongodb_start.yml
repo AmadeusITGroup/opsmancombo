@@ -1,0 +1,14 @@
+---
+- name: Start MongoDB
+  mdb_start: 
+    host:    "{{ fqdn }}"
+    cluster: "{{ group }}" 
+    user:    "{{ user }}" 
+    key:     "{{ key }}" 
+    mms:     "{{ mms }}" 
+    verify:  "{{ no_verify | default(verify) }}"
+  delegate_to: localhost
+  register: result
+  when: before != '0' and kernelup.changed
+
+- debug: msg={{ result }}

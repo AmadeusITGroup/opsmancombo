@@ -1,0 +1,13 @@
+---
+- name: Set Maintenance Window
+  mdb_maint:
+    cluster: "{{ group }}"
+    user:    "{{ user }}"
+    key:     "{{ key }}"
+    mms:     "{{ mms }}"
+    verify:  "{{ no_verify | default(verify) }}"
+  delegate_to: localhost
+  register: result
+
+- debug: msg={{ result }}
+

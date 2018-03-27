@@ -1,0 +1,9 @@
+---
+group: "{{ group_names[0] }}"
+fqdn: "{{ ansible_fqdn }}"
+shell_command:
+  ps: ps -elf | grep -v grep | grep "{{ dir }}" | wc -l
+
+automation:
+  check:  /etc/init.d/mongodb-mms-automation-agent status
+

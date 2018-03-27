@@ -1,0 +1,4 @@
+---
+- name: Action COMPLETED - wait before jump to other node
+  pause: seconds=20
+  when: kernelup.changed

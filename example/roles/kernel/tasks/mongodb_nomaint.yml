@@ -1,0 +1,13 @@
+---
+- name: Delete Maintenance Window
+  mdb_nomaint:
+    cluster: "{{ group }}"
+    user:    "{{ user }}"
+    key:     "{{ key }}"
+    mms:     "{{ mms }}"
+    verify:  "{{ no_verify | default(verify) }}"
+  delegate_to: localhost
+  register: result
+
+- debug: msg={{ result }}
+

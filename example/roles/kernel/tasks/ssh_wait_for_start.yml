@@ -1,0 +1,4 @@
+---
+- name: wait for ssh to come back up
+  local_action: wait_for host={{ fqdn }} port=22 delay=120 timeout=1500 state=started
+  when: kernelup.changed
