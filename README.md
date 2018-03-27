@@ -65,8 +65,8 @@ to check if any change is currently  deploying on MongoDB cluster by Ops Manager
 input parameters:
 
 upgrade mode:
--u <user_name:e-mail_address>
--k <api_key_from_OpsManager>
+-u <user_name>
+-k <api_key_to_OpsManager>
 -m <ops_manager_address:port>
 -l <path_to_log_file>
 ssl: --no-verify  | --verify <path_to_ssl_certificate> 
@@ -74,8 +74,8 @@ ssl: --no-verify  | --verify <path_to_ssl_certificate>
 -v <desired_MongoDB_version>
 
 maintenance mode:
--u <user_name:e-mail_address>
--k <api_key_from_OpsManager>
+-u <user_name>
+-k <api_key_to_OpsManager>
 -m <ops_manager_address:port>
 -l <path_to_log_file>
 ssl: --no-verify  | --verify <path to ssl certificate>
