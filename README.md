@@ -44,10 +44,10 @@ to check replication sync:
 to check alerts on MongoDB cluster:
 ./opsman.py -u <ops_manager_user_name> -k <ops_manager_api_key> -m https://<ops_manager>:<port> -l <path_to_logs> --no-verify maintenance -a alert -n <node_name>
 
-to stop mongoDB processes on sibngle node:
+to stop mongoDB processes on single node:
 ./opsman.py -u <ops_manager_user_name> -k <ops_manager_api_key> -m https://<ops_manager>:<port> -l <path_to_logs> --no-verify maintenance -a stop -n <node_name> 
 
-to start mongoDB processes on sibngle node:
+to start mongoDB processes on single node:
 ./opsman.py -u <ops_manager_user_name> -k <ops_manager_api_key> -m https://<ops_manager>:<port> -l <path_to_logs> --no-verify maintenance -a start -n <node_name>
 
 to check if any change is currently  deploying on MongoDB cluster by Ops Manager
