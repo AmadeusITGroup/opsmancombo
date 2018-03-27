@@ -28,8 +28,8 @@ firmware  upgrade and reboot or kernel patching. Before any operation maintenanc
 MongoDB database upgrade examples:
  - MongoDB cluster upgrade with SSL Cert Verification:
 
-./opsman.py -u <ops_manager_user_name> -k <ops_manager_api_key> -m https://<ops_manager>:<port> -l <path_to_logs> --verify
- <path_to_certificate> upgrade -d <database_name> -v <desired MongoDB version> 
+./opsman.py -u <ops_manager_user_name> -k <ops_manager_api_key> -m https://<ops_manager>:<port> 
+ -l <path_to_logs> --verify <path_to_certificate> upgrade -d <database_name> -v <desired MongoDB version> 
 
 
  - MongoDB cluster upgrade without SSL Cert Verification:
