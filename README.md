@@ -34,7 +34,7 @@ opsman.py -u <ops_manager_user_name> -k <ops_manager_api_key> -m https://<ops_ma
 
 
  - MongoDB cluster upgrade without SSL Cert Verification:
-opsman.py -u <ops_manager_user_name> -k <ops_manager_api_key> -m https://<ops_manager><port> -l <path_to_logs> 
+opsman.py -u <ops_manager_user_name> -k <ops_manager_api_key> -m https://<ops_manager:port> -l <path_to_logs> 
  --no-verify upgrade 
  -d <database_name> -v <desired_MongoDB_version> 
 
@@ -42,23 +42,23 @@ opsman.py -u <ops_manager_user_name> -k <ops_manager_api_key> -m https://<ops_ma
 
 OpsManCombo can be also start in maintenance mode for single node from the cluster.
 to check replication sync:
-./opsman.py -u <ops_manager_user_name> -k <ops_manager_api_key> -m https://<ops_manager>:<port> -l <path_to_logs> 
+./opsman.py -u <ops_manager_user_name> -k <ops_manager_api_key> -m https://<ops_manager:port> -l <path_to_logs> 
  --no-verify maintenance -a sync -n <node_name> 
 
 to check alerts on MongoDB cluster:
-./opsman.py -u <ops_manager_user_name> -k <ops_manager_api_key> -m https://<ops_manager>:<port> -l <path_to_logs> 
+./opsman.py -u <ops_manager_user_name> -k <ops_manager_api_key> -m https://<ops_manager:port> -l <path_to_logs> 
  --no-verify maintenance -a alert -n <node_name>
 
 to stop mongoDB processes on single node:
-./opsman.py -u <ops_manager_user_name> -k <ops_manager_api_key> -m https://<ops_manager>:<port> -l <path_to_logs> 
+./opsman.py -u <ops_manager_user_name> -k <ops_manager_api_key> -m https://<ops_manager:port> -l <path_to_logs> 
  --no-verify maintenance -a stop -n <node_name> 
 
 to start mongoDB processes on single node:
-./opsman.py -u <ops_manager_user_name> -k <ops_manager_api_key> -m https://<ops_manager>:<port> -l <path_to_logs> 
+./opsman.py -u <ops_manager_user_name> -k <ops_manager_api_key> -m https://<ops_manager:port> -l <path_to_logs> 
  --no-verify maintenance -a start -n <node_name>
 
 to check if any change is currently  deploying on MongoDB cluster by Ops Manager
-./opsman.py -u <ops_manager_user_name> -k <ops_manager_api_key> -m https://<ops_manager>:<port> -l <path_to_logs> 
+./opsman.py -u <ops_manager_user_name> -k <ops_manager_api_key> -m https://<ops_manager:port> -l <path_to_logs> 
  --no-verify maintenance -a check -n <node_name>
 
 
@@ -74,10 +74,10 @@ ssl: --no-verify  | --verify <path to ssl certificate>
 -v <desired MongoDB_version>
 
 maintenance mode:
--u <user name - mainly e-mail address>
--k <api key from Ops Manager>
--m <ops manager address>:<port>
--l <path to log file>
+-u <user_name:e-mail_address>
+-k <api_key_from_OpsManager>
+-m <ops_manager_address:port>
+-l <path_to_log_file>
 ssl: --no-verify  | --verify <path to ssl certificate>
--a <action: - alert, stop, start, sync, check>
--n <single node address>
+-a <action:alert,stop,start,sync,check>
+-n <single_node_address>
