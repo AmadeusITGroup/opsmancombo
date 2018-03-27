@@ -5,7 +5,7 @@ galaxy_info:
   Ops Manager REST API. Use cases - MongoDB database upgrade and downgrade, stop and start single node from MongoDB cluster, 
   alert monitoring on MongoDB cluster, replica health check on MongoDB cluster.
   company: Amadeus
-  license: BSD  
+  license: MIT  
   min_ansible_version: 2.0
   platforms:
    - name: EL
