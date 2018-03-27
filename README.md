@@ -30,13 +30,13 @@ MongoDB database upgrade examples:
 
 opsman.py -u <ops_manager_user_name> -k <ops_manager_api_key> -m https://<ops_manager>:<port> 
  -l <path_to_logs> --verify <path_to_certificate> upgrade 
- -d <database_name> -v <desired MongoDB version> 
+ -d <database_name> -v <desired_MongoDB_version> 
 
 
  - MongoDB cluster upgrade without SSL Cert Verification:
 opsman.py -u <ops_manager_user_name> -k <ops_manager_api_key> -m https://<ops_manager>:<port> -l <path_to_logs> 
  --no-verify upgrade 
- -d <database_name> -v <desired MongoDB version> 
+ -d <database_name> -v <desired_MongoDB_version> 
 
 
 
