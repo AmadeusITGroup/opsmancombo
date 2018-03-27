@@ -1,0 +1,7 @@
+---
+- name: start mms service
+  service: name=mongodb-mms-automation-agent state=started
+  become: yes
+  become_user: root
+  become_method: dzdo
+  when: kernelup.changed

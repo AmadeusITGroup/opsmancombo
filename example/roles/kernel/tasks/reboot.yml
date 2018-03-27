@@ -1,0 +1,7 @@
+---
+- name: reboot the system
+  command: reboot
+  become: yes
+  become_user: root
+  become_method: dzdo
+  when: kernelup.changed

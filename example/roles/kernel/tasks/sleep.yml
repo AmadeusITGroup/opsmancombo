@@ -1,0 +1,4 @@
+---
+- name: wait before move forward
+  pause: seconds=10
+  when: kernelup.changed

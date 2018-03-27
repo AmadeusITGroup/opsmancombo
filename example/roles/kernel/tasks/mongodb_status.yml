@@ -1,0 +1,7 @@
+---
+- name: save system status
+  shell: "{{ shell_command.ps }}"
+  register: mongops
+
+- set_fact: before={{ mongops.stdout }}
+- debug: msg={{ before }}

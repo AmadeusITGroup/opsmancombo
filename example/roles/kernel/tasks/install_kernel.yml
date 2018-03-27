@@ -1,0 +1,10 @@
+---
+- name: install kernel updates
+  action: yum name=kernel*
+          disablerepo=*
+          enablerepo=redhat-el-6
+          state=latest
+  become: yes
+  become_user: root
+  become_method: dzdo
+  register: kernelup

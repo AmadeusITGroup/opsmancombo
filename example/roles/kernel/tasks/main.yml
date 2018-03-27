@@ -1,0 +1,22 @@
+---
+- include: refresh_yum_repo.yml 
+- include: check_jobs.yml
+- include: check_alerts.yml
+- include: check_replica.yml
+- include: mongodb_status.yml 
+- include: install_kernel.yml
+- include: mongodb_maint.yml
+- include: mongodb_stop.yml
+- include: deploy_change.yml 
+- include: wait_for_reboot.yml
+- include: reboot.yml
+- include: ssh_wait_for_start.yml
+- include: start_automation.yml
+- include: sleep.yml
+- include: check_automation.yml
+- include: mongodb_start.yml
+- include: deploy_change.yml 
+- include: sleep.yml
+- include: compare_processes.yml
+- include: mongodb_nomaint.yml
+- include: sleep_and_jump.yml

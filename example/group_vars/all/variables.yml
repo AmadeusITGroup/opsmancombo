@@ -1,0 +1,6 @@
+user: <user_name> 
+mms: https:/<ops_manager>:<port>
+key: "{{ vault_mongo_api_key  }}"
+dir: /mongodb/data/path
+#no_verify: 
+verify: /path/to/ssl/certificate

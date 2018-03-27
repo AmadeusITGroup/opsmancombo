@@ -1,0 +1,7 @@
+---
+- name: Confirm if Automation Agent is running
+  shell: "{{ automation.check }}"
+  register: agent_status
+  failed_when: "'NOT' in agent_status.stdout"
+  changed_when: False
+  when: kernelup.changed

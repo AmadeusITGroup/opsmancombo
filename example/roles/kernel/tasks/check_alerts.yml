@@ -1,0 +1,13 @@
+---
+- name: Check alerts on MongoDB cluster
+  mdb_alerts: 
+    cluster: "{{ group }}"
+    user:    "{{ user }}" 
+    key:     "{{ key }}"
+    mms:     "{{ mms }}" 
+    verify:  "{{ no_verify | default(verify) }}" 
+  delegate_to: localhost
+  register: result
+  failed_when: result.meta != 0 
+
+- debug: msg={{ result.meta }}

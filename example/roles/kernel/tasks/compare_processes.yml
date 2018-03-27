@@ -1,0 +1,6 @@
+---
+- name: wait for start mongo
+  shell: "{{ shell_command.ps }}"
+  register: after
+  retries: 30
+  until:  before == after.stdout

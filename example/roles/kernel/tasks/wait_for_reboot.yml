@@ -1,0 +1,4 @@
+---
+- name: wait before reboot
+  pause: seconds=10
+  when: before != '0' and kernelup.changed
