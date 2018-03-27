@@ -2,7 +2,7 @@
 galaxy_info:
   author: Arkadiusz Borucki
   description: MongoDB Ops Manager python class and Ansible module for MongoDB database cluster and  single node management via 
-  Ops Manager REST API. Use cases: MongoDB database upgrade and downgrade, stop and start single node from MongoDB cluster, 
+  Ops Manager REST API. Use cases - MongoDB database upgrade and downgrade, stop and start single node from MongoDB cluster, 
   alert monitoring on MongoDB cluster, replica health check on MongoDB cluster.
   company: Amadeus
   license: BSD  
