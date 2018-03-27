@@ -40,7 +40,8 @@ MongoDB database upgrade examples:
 
 
 
-OpsManCombo can be also start in maintenance mode for single node from the cluster.
+- OpsManCombo can be also start in maintenance mode for single node from the cluster.
+
 to check replication sync:
 ./opsman.py -u <ops_manager_user_name> -k <ops_manager_api_key> -m https://<ops_manager:port> -l <path_to_logs> 
  --no-verify maintenance -a sync -n <node_name> 
@@ -62,7 +63,7 @@ to check if any change is currently  deploying on MongoDB cluster by Ops Manager
  --no-verify maintenance -a check -n <node_name>
 
 
-input parameters:
+- input parameters:
 
 upgrade mode:
 -u <user_name>
