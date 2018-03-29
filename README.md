@@ -12,7 +12,7 @@ Opsmancombo use Ops Manager REST API calls for MongoDB database minor and major 
 
 
 <p align="center">
-  <img width="460" height="300" src="D:\new\rachunki">
+  <img width="460" height="300" src="https://github.com/AmadeusITGroup/opsmancombo/blob/master/meta/ops.jpg">
 </p>
 
 
