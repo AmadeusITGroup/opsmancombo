@@ -12,7 +12,7 @@ Opsmancombo use Ops Manager REST API calls for MongoDB database minor and major 
 
 
 <p align="center">
-  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
+  <img width="460" height="300" src="E:\ops.png">
 </p>
 
 OpsManCombo should be used by your Dev Ops team! - OpsManCombo can be integrated with frameworks like Ansible!.
