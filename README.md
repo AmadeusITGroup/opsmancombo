@@ -10,8 +10,9 @@ https://docs.opsmanager.mongodb.com/current/reference/api/
 Opsmancombo use Ops Manager REST API calls for MongoDB database minor and major upgrade, downgrade, MongoDB cluster alert detection, replication check, stoping and starting MongoDB processess on single node. 
 
 
+
 <p align="center">
-  <img src="E:\ops.png" width="350"/>
+  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
 </p>
 
 OpsManCombo should be used by your Dev Ops team! - OpsManCombo can be integrated with frameworks like Ansible!.
