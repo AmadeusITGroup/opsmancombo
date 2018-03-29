@@ -15,7 +15,7 @@ Opsmancombo use Ops Manager REST API calls for MongoDB database minor and major 
   <img width="460" height="300" src="D:\new\rachunki">
 </p>
 
-![Screenshot](E:\ops.jpg)
+
 
 OpsManCombo should be used by your Dev Ops team! - OpsManCombo can be integrated with frameworks like Ansible!.
 OpsManCombo can be started in upgrade (for MongoDB databases upgrade) and maintenance mode (for cluster and single nodes maintenance).
