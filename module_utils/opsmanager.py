@@ -411,11 +411,13 @@ def main():
             manager.check_cluster_health(group)
             manager.set_maintenance(group)
             manager.shutdown_db(group, args.host, True)
+            manager.deploy_change(group)
             manager.mongo_alerts(group)
 
         if args.action == 'start':
             manager.mongo_alerts(group)
             manager.shutdown_db(group, args.host, False)
+            manager.deploy_change(group)
             manager.check_cluster_health(group)
             manager.delete_maintenance(group)
 
