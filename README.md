@@ -77,7 +77,7 @@ to check if any change is currently  deploying on MongoDB cluster by Ops Manager
 upgrade mode:
 -u <user_name>
 -k <api_key_to_OpsManager>
--m <ops_manager_address:port>
+-m https://<ops_manager_address:port>
 -l <path_to_log_file>
 ssl: --no-verify  | --verify <path_to_ssl_certificate> 
 -d <MongoDB_database_name>
@@ -86,7 +86,7 @@ ssl: --no-verify  | --verify <path_to_ssl_certificate>
 maintenance mode:
 -u <user_name>
 -k <api_key_to_OpsManager>
--m <ops_manager_address:port>
+-m https://<ops_manager_address:port>
 -l <path_to_log_file>
 ssl: --no-verify  | --verify <path to ssl certificate>
 -a <action:alert,stop,start,sync,check>
