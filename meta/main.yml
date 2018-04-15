@@ -12,14 +12,11 @@ galaxy_info:
      versions:
       - 6
       - 7 
-   - name: MongoDB Ops Manager
-     versions:
-      - 3.4
-      - 3.6 
   galaxy_tags:
    - database
    - MongoDB
    - NoSQL
    - Ops Manager
-   - automation  
+   - automation 
+   - DevOps
 dependecies: []
