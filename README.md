@@ -13,9 +13,9 @@ OpsManCombo should be used by your Dev Ops team! - OpsManCombo can be integrated
 OpsManCombo can be started in upgrade (for MongoDB databases upgrade) and maintenance mode (for cluster and single nodes maintenance).
 OpsManCombo can use SSL Cert Verification or can be run without SSL Cert Verification. Logging option can also be set.
 
-<p align="left"><img width="660" height="200" src="https://github.com/AmadeusITGroup/opsmancombo/blob/master/meta/ops.jpg"></p>
+<p align="left"><img width="500" height="200" src="https://github.com/AmadeusITGroup/opsmancombo/blob/master/meta/ops.jpg"></p>
 
-![alt text](https://github.com/AmadeusITGroup/opsmancombo/blob/master/meta/ops.jpg)
+
 
 use cases:
 •	MongoDB cluster upgrade,
