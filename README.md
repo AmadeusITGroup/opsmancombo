@@ -9,18 +9,15 @@ https://docs.opsmanager.mongodb.com/current/reference/api/
 
 Opsmancombo use Ops Manager REST API calls for MongoDB database minor and major upgrade, downgrade, MongoDB cluster alert detection, replication check, stopping and starting MongoDB processes on single node. 
 
-
+OpsManCombo should be used by your Dev Ops team! - OpsManCombo can be integrated with frameworks like Ansible!.
+OpsManCombo can be started in upgrade (for MongoDB databases upgrade) and maintenance mode (for cluster and single nodes maintenance).
+OpsManCombo can use SSL Cert Verification or can be run without SSL Cert Verification. Logging option can also be set.
 
 <p align="center">
   <img width="660" height="200" src="https://github.com/AmadeusITGroup/opsmancombo/blob/master/meta/ops.jpg">
 </p>
 
-
-
-OpsManCombo should be used by your Dev Ops team! - OpsManCombo can be integrated with frameworks like Ansible!.
-OpsManCombo can be started in upgrade (for MongoDB databases upgrade) and maintenance mode (for cluster and single nodes maintenance).
-OpsManCombo can use SSL Cert Verification or can be run without SSL Cert Verification. Logging option can also be set.
-
+use cases:
 •	MongoDB cluster upgrade,
 •	MongoDB cluster downgrade,
 •	stop MongoDB processes on one node from MongoDB cluster (e.g for node reboot or HW exchange),
